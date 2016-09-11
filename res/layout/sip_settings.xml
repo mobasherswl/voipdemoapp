@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+
+	    <TextView
+	        android:id="@+id/id_tv_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/username" />
+	
+	    <EditText
+	        android:id="@+id/id_et_username"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:maxLength="25"
+	        android:hint="@string/username" >
+	
+	        <requestFocus />
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/id_tv_password"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password" />
+	
+	    <EditText
+	        android:id="@+id/id_et_password"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textPassword"
+	        android:ems="10"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:maxLength="25"
+	        android:hint="@string/password" >
+	
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/id_tv_domain"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/domain" />
+	
+	    <EditText
+	        android:id="@+id/id_et_domain"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:maxLength="25"
+	        android:hint="@string/domain" >
+	
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/id_tv_proxy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/proxy" />
+	
+	    <EditText
+	        android:id="@+id/id_et_proxy"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:maxLength="25"
+	        android:hint="@string/proxy" >
+	
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/id_tv_port"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/port" />
+	
+	    <EditText
+	        android:id="@+id/id_et_port"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number"
+	        android:digits="0123456789"
+	        android:maxLength="5"
+	        android:hint="@string/port" >
+	
+	    </EditText>
+	
+	    <CheckBox
+	        android:id="@+id/id_cb_ice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/enable_ice" >
+	
+	    </CheckBox>
+
+	    <CheckBox
+	        android:id="@+id/id_cb_stun_turn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/enable_stun_turn"
+	        android:onClick="@string/onCbStunTurn" >
+	    </CheckBox>
+	    
+		<LinearLayout android:id="@+id/id_layout_stun_turn"
+		    android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="vertical"
+		   android:paddingLeft="20dp"
+		   android:visibility="gone" >
+	        
+		    <TextView
+		        android:id="@+id/id_tv_stun"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/server_address" />
+		
+		    <EditText
+		        android:id="@+id/id_et_stun"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:maxLength="25"
+		        android:hint="@string/server_address" >
+		
+		    </EditText>
+
+		    <TextView
+		        android:id="@+id/id_tv_stun_port"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/port" />
+		
+		    <EditText
+		        android:id="@+id/id_et_stun_port"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="number"
+		        android:digits="0123456789"
+		        android:maxLength="5"
+		        android:hint="@string/port" >
+		
+		    </EditText>
+		    		    
+		</LinearLayout>
+
+	    <Button
+	        android:id="@+id/id_btn_save"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/save"
+	        android:onClick="@string/onSave" />
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DialActivity"
+    android:background="#000000" >
+    
+    <LinearLayout
+        android:orientation="vertical" 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="2dp" >
+
+	    <TextView
+	        android:id="@+id/id_phone_num"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@android:color/background_dark"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        android:textColor="#00FF00"
+	        android:textSize="20sp"
+	        android:padding="10dp" />
+	
+	    <TextView
+	        android:id="@+id/id_reg_status"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:singleLine="true"
+	        android:text="@string/reg_status"
+	        android:textSize="14sp"
+	        android:background="@drawable/sel_keypad"
+	        android:textColor="#00FF00"
+	        android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dp"
+        android:orientation="vertical" >
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:weightSum="6"
+	        android:layout_weight="2" >
+	        
+	        <include android:id="@+id/id_btn_num_1" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_2" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_3" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+
+	    </LinearLayout>
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:weightSum="6"
+	        android:layout_weight="2" >
+	        
+	        <include android:id="@+id/id_btn_num_4" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_5" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_6" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        
+        </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:weightSum="6"
+	        android:layout_weight="2" >
+	        
+	        <include android:id="@+id/id_btn_num_7" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_8" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_9" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        
+        </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:weightSum="6"
+	        android:layout_weight="2" >
+	        
+	        <include android:id="@+id/id_btn_plus" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_num_0" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_bksp" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        
+        </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:weightSum="4"
+	        android:layout_weight="2" >
+	        
+	        <include android:id="@+id/id_btn_voice_call" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        <include android:id="@+id/id_btn_video_call" 
+	            layout="@layout/activity_dial_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_margin="1dp"
+	            android:layout_weight="2" />
+	        	        
+        </LinearLayout>
+	    
+	</LinearLayout>
+
+</LinearLayout>
